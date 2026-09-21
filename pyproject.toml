@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=59", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jev-robotics"
+version = "0.1.0"
+description = "Clean-room JEV-inspired dynamic candidate decision architecture for robotics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["jev", "robotics", "robot-planning", "decision-model", "candidate-embeddings", "safety"]
+authors = [{name = "Chen Shuai"}]
+
+[project.scripts]
+jev-robotics = "jev_robotics.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["jev_robotics*"]

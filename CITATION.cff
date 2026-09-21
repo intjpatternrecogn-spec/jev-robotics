@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If this reference implementation helps your work, please cite the repository."
+title: "JEV Architecture for Robotics"
+type: software
+authors:
+  - family-names: "Chen"
+    given-names: "Shuai"
+version: 0.1.0
+date-released: 2026-09-21
+license: MIT
+keywords:
+  - JEV architecture
+  - robotics
+  - embodied AI
+  - candidate embeddings
+  - robot planning

@@ -1,0 +1,33 @@
+{
+  "state": {
+    "end_effector_xyz": [0.2, 0.0, 0.4],
+    "target_xyz": [0.45, 0.1, 0.25],
+    "reach_radius_m": 0.9,
+    "payload_kg": 0.4,
+    "payload_limit_kg": 2.0,
+    "human_distance_m": 1.8,
+    "collision_detected": false,
+    "gripper_has_object": false
+  },
+  "question": "Which bounded skill should execute next to pick the object safely?",
+  "skills": [
+    {
+      "name": "move_to_target",
+      "description": "move the gripper toward the target pose",
+      "estimated_time_s": 1.4,
+      "estimated_energy_j": 8.0
+    },
+    {
+      "name": "grasp",
+      "description": "close the gripper around the target",
+      "estimated_time_s": 0.4,
+      "estimated_energy_j": 2.0
+    },
+    {
+      "name": "hold",
+      "description": "hold position and wait for a new observation",
+      "estimated_time_s": 0.1,
+      "estimated_energy_j": 0.2
+    }
+  ]
+}

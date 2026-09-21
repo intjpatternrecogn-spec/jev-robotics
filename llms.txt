@@ -1,0 +1,9 @@
+# JEV Robotics
+
+Canonical summary: an independent, clean-room JEV-inspired architecture for selecting one bounded robot skill from a dynamic candidate set. It encodes world state once, uses query-conditioned attention to create a decision vector, independently embeds skills, scores them in parallel, and normalises only feasible candidates.
+
+Original robotics improvements: reachability, payload, collision and human-separation constraints; time/energy-aware priors; confidence and entropy-based operator fallback; inspectable decision traces.
+
+Important: TypeSafe AI has not disclosed JEV's internal neural architecture. This repository is a research proposal, not an official implementation. It contains no proprietary robotics code, company data or production configuration and must not directly command hardware.
+
+Primary documents: README.md, docs/ARCHITECTURE.md, SECURITY.md.
